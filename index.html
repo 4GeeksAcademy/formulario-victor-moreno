@@ -26,20 +26,24 @@
                 <div class="row">
                     <div class="col-sm-5 mb-3">
                         <label for="exampleFormControlInput1" class="form-label">Card #</label>
-                        <input type="text" class="form-control" id="exampleFormControlInput1"
-                            placeholder="XXXXXXXXXXXX" maxlength="16">
+                        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="XXXXXXXXXXXX"
+                            maxlength="16">
                     </div>
                     <div class="col-sm-3">
                         <div class="mb-3">
                             <label for="exampleFormControlInput1" class="form-label">CVC #</label>
-                            <input type="text" class="form-control" id="exampleFormControlInput1"
-                                placeholder="000" maxlength="3">
+                            <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="000"
+                                maxlength="3">
                         </div>
                     </div>
                     <div class="col-sm-4">
                         <div class="mb-3">
                             <label for="exampleFormControlInput1" class="form-label">Amount</label>
-                            <input type="number" class="form-control" id="exampleFormControlInput1" placeholder="Amount $">
+                            <div class="input-group">
+                                <span class="input-group-text">$</span>
+                                <input type="number" class="form-control" id="exampleFormControlInput1"
+                                    placeholder="Amount">
+                            </div>
                         </div>
                     </div>
 
@@ -90,29 +94,35 @@
             </div>
             <!-----------------------------------------PAYMENT------------------------------------->
             <div class="row">
-                <div class="col-sm-4">
+                <div class="col-sm-3">
                     <p>We accept:</p>
-                    
-                    <div class="bg-secondary">
-                        <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1"
-                                value="option1">
-                            <label class="form-check-label" for="inlineRadio1"><i class="fa-brands fa-cc-mastercard"></i></label>
-                        </div>
-                        <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2"
-                                value="option2">
-                            <label class="form-check-label" for="inlineRadio2"><i class="fa-brands fa-cc-visa"></i></label>
-                        </div>
-                        <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3"
-                                value="option3">
-                            <label class="form-check-label" for="inlineRadio3"><i class="fa-brands fa-paypal"></i></label>
-                        </div>
-                        <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3"
-                                value="option3">
-                            <label class="form-check-label" for="inlineRadio3"><i class="fa-brands fa-apple-pay"></i></label>
+
+                    <div class="bg-secondary rounded-2 d-inline-block">
+                        <div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1"
+                                    value="option1">
+                                <label class="form-check-label" for="inlineRadio1"><i
+                                        class="fa-brands fa-cc-mastercard"></i></label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2"
+                                    value="option2">
+                                <label class="form-check-label" for="inlineRadio2"><i
+                                        class="fa-brands fa-cc-visa"></i></label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3"
+                                    value="option3">
+                                <label class="form-check-label" for="inlineRadio3"><i
+                                        class="fa-brands fa-paypal"></i></label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3"
+                                    value="option3">
+                                <label class="form-check-label" for="inlineRadio3"><i
+                                        class="fa-brands fa-apple-pay"></i></label>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -126,7 +136,7 @@
             <!-----------------------------BUTTON----------------------------------------->
             <div class="row bg-light p-2 ">
                 <div class="col-12 d-flex justify-content-end">
-                    
+
                     <button type="button" class="btn btn-secondary me-2">Cancel</button>
                     <button type="submit" class="btn btn-primary">Send</button>
                 </div>
